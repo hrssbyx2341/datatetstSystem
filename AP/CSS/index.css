@@ -1,0 +1,50 @@
+body{ background-color: azure;}
+
+#div1Style {
+    margin:0;
+    padding:0;
+    border:0px solid #f00;
+}
+
+#div1Style ul{
+    width: 1000px;display: inline;
+}
+#div1Style ul li{
+    width: 77px;float: right;list-style-type: none;
+}
+#div1Style ul li a{
+    color: #465170;text-align: center;
+}
+#div1Style ul li a:hover{
+    color: #ff3047;
+}
+
+#div2Style {
+    margin:0;
+    padding:0;
+    border:0px solid #f00;
+}
+
+#div2Style h1{
+    text-align: center; color: blue; margin-top: 0px ; font-family: "微软雅黑 Light";font-style: inherit; font-size: 50px;
+}
+#div2Style a{
+    text-align: center;color: blue; margin-top: 0px ; font-family: "微软雅黑 Light";font-style: inherit; font-size: 50px;
+}
+
+#div2Style form{
+    text-align: center;
+    color: black;
+    /*margin-left:300px;*/
+    display: block;
+
+}
+
+#div2Style form table tr td{
+    text-align: left;
+}
+
+#div2Style form hr {
+    margin-left: 0px;
+    text-align: center;
+}

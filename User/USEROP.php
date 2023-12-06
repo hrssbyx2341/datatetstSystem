@@ -125,8 +125,13 @@
         /*******************用户更改密码开始*********************/
         private function  _userUpdatePassword($User,$OldPassword,$NewPassword){
             global $userDatabaseUser, $userDatabasePassword , $userDatabaseName, $userTableName,$adminUserLevel,$normalUserLevel;
+            if ($OldPassword == '' or $NewPassword == ''){
+                return -4;
+            }
+            
             $OldPassword1 = md5($OldPassword);
             $NewPassword = md5($NewPassword);
+            
             $isExist = $this->_getUserLevel($User,$OldPassword);
             if($isExist == -1 || $isExist == -2){
                 return -1;
